@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-model
+  href="http://download.ros.org/schema/package_format3.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>perch_placement</name>
+  <version>0.0.1</version>
+  <description>The perch_placement package. This package uses heuristic search methods to optimize the perching location of camera-equipped drones, in order to optimally reconstruct the environment</description>
+
+  <maintainer email="simon.honigmann@epfl.ch">Simon</maintainer>
+
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <!-- Examples: -->
+  <!-- Use depend as a shortcut for packages that are both build and exec dependencies -->
+  <!--   <depend>roscpp</depend> -->
+  <!--   Note that this is equivalent to the following: -->
+  <!--   <build_depend>roscpp</build_depend> -->
+  <!--   <exec_depend>roscpp</exec_depend> -->
+  <!-- Use build_depend for packages you need at compile time: -->
+  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- Use build_export_depend for packages you need in order to build against this package: -->
+  <!--   <build_export_depend>message_generation</build_export_depend> -->
+  <!-- Use buildtool_depend for build tool packages: -->
+  <!--   <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- Use exec_depend for packages you need at runtime: -->
+  <!--   <exec_depend>message_runtime</exec_depend> -->
+  <!-- Use test_depend for packages you need only for testing: -->
+  <!--   <test_depend>gtest</test_depend> -->
+  <!-- Use doc_depend for packages you need only for building documentation: -->
+  <!--   <doc_depend>doxygen</doc_depend> -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <depend>mesh_partition</depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-paramiko</exec_depend>
+
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>python-open3d-pip</exec_depend>
+  <exec_depend>python-plyfile-pip</exec_depend>
+  <exec_depend>python3-pyswarms-pip</exec_depend>
+
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-numpy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-numpy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-shapely</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-shapely</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-matplotlib</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-matplotlib</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-scipy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-scipy</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-setuptools</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-setuptools</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-opencv</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-opencv</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-triangle-pip</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-triangle-pip</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-sklearn</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-sklearn</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-yaml</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-yaml</exec_depend>
+
+  <exec_depend>python3-vedo-pip</exec_depend>
+  <exec_depend>python3-pyvista-pip</exec_depend>
+  <exec_depend>python3-trimesh-pip</exec_depend>
+  <exec_depend>python3-mapbox-earcut-pip</exec_depend>
+  <exec_depend>python3-pymesh2-pip</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

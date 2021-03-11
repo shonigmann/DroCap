@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<arg name="input_mesh" default="/home/simon/Documents/SLAM_Datasets/Bundle_Fusion_Dataset/top_test/mit_32_d507_2_quad_simplified.ply"/>
+	<arg name="output_mesh" default="/home/simon/catkin_ws/src/perch_placement/models/color_segmented_mesh.ply"/>
+	<arg name="segmented_mesh_clusters" default="/home/simon/catkin_ws/src/perch_placement/models/clusters/cluster"/>
+
+
+	<!-- Perch Placement 
+	<include file="$(find perch_placement)/launch/perch_placement.launch"></include>-->
+
+	<!-- Mesh Partition -->
+	<include file="$(find mesh_partition)/launch/launch_cpo.launch"></include>
+
+	<!-- publish cleaned mesh path -->
+	<node pkg="rostopic" type="rostopic" name="rostopic" args="pub /clean_mesh_env mesh_partition/DenseEnvironment
+	'{header: {seq: 0, stamp: {secs: 0, nsecs: 0}, frame_id: ''}, 
+	  input_mesh: '$(arg input_mesh)', 
+	  target_num_clusters: 2000, 
+	  output_mesh: '$(arg output_mesh)',
+	  segmented_mesh_clusters: '$(arg segmented_mesh_clusters)''}"/>
+
+
+	<!-- Gazebo sim 
+	<include file="$(find perch_placement)/src/gazebo/camera_world.launch"></include>-->
+
+</launch>

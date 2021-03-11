@@ -1,0 +1,11 @@
+**/venv
+**/test
+**/.idea
+**/__pycache__
+**/python_pcl.egg-info
+*.log
+scripts/o3d_test.py
+scripts/speed_test.py
+*.ply
+**/results
+**/gazebo

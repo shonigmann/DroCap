@@ -1,0 +1,14 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Remove Duplicate Faces"/>
+ <filter name="Remove Duplicated Vertex"/>
+ <filter name="Remove Isolated pieces (wrt Diameter)">
+  <Param type="RichAbsPerc" value="1.0" min="0" name="MinComponentDiag" max="10.0"/>
+ </filter> 
+ <filter name="Laplacian Smooth">
+  <Param type="RichInt" value="3" name="stepSmoothNum"/>
+  <Param type="RichBool" value="true" name="Boundary"/>
+  <Param type="RichBool" value="true" name="cotangentWeight"/>
+  <Param type="RichBool" value="false" name="Selected"/>
+ </filter>
+</FilterScript>

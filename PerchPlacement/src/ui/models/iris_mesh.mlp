@@ -1,0 +1,51 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh filename="iris.stl" visible="1" label="iris.stl">
+   <MLMatrix44>
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption solidColor="255 255 255 255" wireColor="64 64 64 255" pointColor="131 149 69 255" boxColor="234 234 234 255" wireWidth="1" pointSize="3">100001000000000000000100000001011001000010100000000100111011100000001001</RenderingOption>
+  </MLMesh>
+  <MLMesh filename="iris_prop_cw.dae" visible="1" label="iris_prop_cw.dae">
+   <MLMatrix44>
+1 0 0 0.12579 
+0 1 0 -0.21867 
+0 0 1 0.0256654 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption solidColor="0 0 0 255" wireColor="64 64 64 255" pointColor="131 149 69 255" boxColor="234 234 234 255" wireWidth="1" pointSize="3">100001000000000000000100000001010101000010100000000100111011100000001001</RenderingOption>
+  </MLMesh>
+  <MLMesh filename="iris_prop_ccw.dae" visible="1" label="iris_prop_ccw.dae">
+   <MLMatrix44>
+1 0 0 -0.133597 
+0 1 0 -0.203341 
+0 0 1 0.0270152 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption solidColor="255 0 0 255" wireColor="64 64 64 255" pointColor="131 149 69 255" boxColor="234 234 234 255" wireWidth="1" pointSize="3">100001000000000000000100000001010101000010100000000100111011100000001001</RenderingOption>
+  </MLMesh>
+  <MLMesh filename="iris_prop_cw2.dae" visible="1" label="iris_prop_cw.dae_copy">
+   <MLMatrix44>
+1 0 0 -0.139034 
+0 1 0 0.206684 
+0 0 1 0.0262295 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption solidColor="0 0 0 255" wireColor="64 64 64 255" pointColor="131 149 69 255" boxColor="234 234 234 255" wireWidth="1" pointSize="3">100001000000000000000100000001010101000010100000000100111011100000001001</RenderingOption>
+  </MLMesh>
+  <MLMesh filename="iris_prop_ccw2.dae" visible="1" label="iris_prop_ccw.dae_copy">
+   <MLMatrix44>
+1 0 0 0.129419 
+0 1 0 0.222128 
+0 0 1 0.0256729 
+0 0 0 1 
+</MLMatrix44>
+   <RenderingOption solidColor="255 0 0 255" wireColor="64 64 64 255" pointColor="131 149 69 255" boxColor="234 234 234 255" wireWidth="1" pointSize="3">100001000000000000000100000001010101000010100000000100111011100000001001</RenderingOption>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup/>
+</MeshLabProject>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<node name="perch_placement_node" output="screen" pkg="perch_placement" type="where_to_perch.py" args=""/>
+
+</launch>

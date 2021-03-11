@@ -1,0 +1,6 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Remove Isolated pieces (wrt Diameter)">
+  <Param type="RichAbsPerc" value="1.0" min="0" name="MinComponentDiag" max="10.0"/>
+ </filter>
+</FilterScript>

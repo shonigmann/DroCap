@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<!-- Perch Placement
+	<include file="$(find perch_placement)/launch/perch_placement.launch"></include> -->
+
+	<!-- Mesh Partition -->
+	<include file="$(find mesh_partition)/launch/launch_cpo.launch"></include>
+
+</launch>

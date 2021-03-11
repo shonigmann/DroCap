@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<node name="mesh_partition_node" output="screen" pkg="mesh_partition" type="mesh_partition_node" args=""/>
+
+</launch>
